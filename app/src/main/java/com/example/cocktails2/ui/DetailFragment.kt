@@ -14,11 +14,6 @@ import com.example.cocktails2.R
 import com.example.cocktails2.databinding.FragmentDetailBinding
 import com.example.cocktails2.viewModel.MainViewModel
 
-/**
- * A simple [Fragment] subclass.
- * Use the [DetailFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class DetailFragment : Fragment() {
 
     private val viewModel: MainViewModel by viewModels()
