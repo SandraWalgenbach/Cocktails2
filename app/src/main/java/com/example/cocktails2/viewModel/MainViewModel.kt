@@ -36,6 +36,8 @@ class MainViewModel() : ViewModel() {
         viewModelScope.launch {
             val cocktailMap = apiRepository.getDrinkDetails(id)
             _cocktailDetails.value = transformCocktailMap(cocktailMap)
+            //println(_cocktailDetails.value)
+            //_cocktailDetails.postValue(transformCocktailMap(cocktailMap))
         }
     }
 
