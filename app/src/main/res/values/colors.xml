@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="tiffany_blue">#0ABAB5</color>
+    <color name="neon_pink">#FF10F0</color>
+    <color name="rosa">#FFC0CB</color>
+    <color name="lavendel">#E6E6FA</color>
+    <color name="flieder">#723298</color>
+
+</resources>
