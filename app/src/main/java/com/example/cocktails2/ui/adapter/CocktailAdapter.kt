@@ -43,7 +43,10 @@ class CocktailAdapter(
         }
         holder.binding.cocktailName.text = cocktail.strDrink
 
-        //fehler
+        //fehler..
+        // getestet ob beim navigieren in das DetailFragment überhaupt die onCreateView bzw. onViewCreated callt
+        // mit einem Log aber es kommt nichtmal zu dem Schritt, daher kann das Problem nicht an dem asynchronen Task
+        // ist da beide Views unabhängig von diesem gecallt werden müssten
         holder.itemView.setOnClickListener {
             viewModel.getCocktailDetails(cocktail.idDrink)
             val navController = holder.itemView.findNavController()

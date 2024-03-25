@@ -17,6 +17,7 @@ import com.example.cocktails2.viewModel.MainViewModel
 
 class DetailFragment : Fragment() {
 
+    //mit minh von ViewModels() zu activityViewModels() geändert
     private val viewModel: MainViewModel by activityViewModels()
 
     private lateinit var binding: FragmentDetailBinding
