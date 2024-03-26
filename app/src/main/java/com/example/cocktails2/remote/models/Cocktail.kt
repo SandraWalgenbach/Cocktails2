@@ -1,5 +1,5 @@
 package com.example.cocktails2.remote.models
-//test
+
 data class Cocktail (
     val id: String,
     val name: String,

@@ -12,7 +12,6 @@ import com.example.cocktails2.remote.models.CocktailPreview
 import com.example.cocktails2.remote.models.User
 import kotlinx.coroutines.launch
 
-//test
 class MainViewModel() : ViewModel() {
 
     private val apiRepository = ApiRepository.getInstance()
