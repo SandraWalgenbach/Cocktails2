@@ -12,6 +12,7 @@ import com.example.cocktails2.remote.models.CocktailPreview
 import com.example.cocktails2.remote.models.User
 import kotlinx.coroutines.launch
 
+//test
 class MainViewModel() : ViewModel() {
 
     private val apiRepository = ApiRepository.getInstance()
@@ -131,7 +132,8 @@ class MainViewModel() : ViewModel() {
                         "name" to (drink["strIngredient15"] ?: ""),
                         "measure" to (drink["strMeasure15"] ?: "")
                     )
-                ).filter { it["name"] != null },
+                    //geändert
+                ).filter { it["name"]?.isNotEmpty() ?: false },
                 image = drink["strDrinkThumb"] ?: ""
             )
         }.first()
