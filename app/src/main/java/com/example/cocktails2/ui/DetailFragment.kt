@@ -41,7 +41,7 @@ class DetailFragment : Fragment() {
                 binding.alcoholicTextView.text = "Ja"
                 binding.glassTextView.text = it.glass
                 binding.nameTextView.text = it.name
-                binding.ingredientsTextView.text = it.ingredients.toString()
+                binding.ingredientsTextView.text = it.ingredientsAsString()
                 binding.instructionTextView.text = it.instruction
                 val imageUri = it.image.toUri().buildUpon().scheme("https").build()
                 binding.imageView.load(imageUri) {
